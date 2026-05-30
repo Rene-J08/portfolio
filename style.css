@@ -471,9 +471,11 @@ header .navbar {
 @media (max-width: 768px) {
     
     header .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 5px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 15px;
+        align-items: center;
     }
     
     .navbar .nav-menu {
