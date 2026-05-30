@@ -469,38 +469,40 @@ header .navbar {
 /* vanaf hier style voor telefoons */
 
 @media (max-width: 768px) {
-    
     header .navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 5px 10px;
+        padding: 12px 15px;
         align-items: center;
     }
-    
+    .navbar .nav-logo .logo-text {
+        font-size: 1.1rem;
+    }
     .navbar .nav-menu {
-        gap: 20px;
+        display: flex;
+        gap: 12px;
     }
 
+    .navbar .nav-menu .nav-link {
+        font-size: 0.85rem;
+        padding: 4px 0;
+    }
     .inleiding .inleiding-content {
         flex-direction: column-reverse;
         text-align: center;
         padding-top: 50px;
     }
-
     .inleiding .inleiding-details .omschrijving {
         max-width: 100%;
         margin: 20px 0 25px;
     }
-
     .inleiding .inleiding-details .buttons {
         justify-content: center;
     }
-
     .inleiding .inleiding-details .button {
         margin-bottom: 40px; 
     }
-
     .inleiding .photo {
         justify-content: center;
         margin-bottom: 25px;
@@ -518,15 +520,12 @@ header .navbar {
         margin-right: 15px;
         padding-left: 35px; 
     }
-
     .timeline-sch {
         left: -47px;
     }
-
     .sport-timeline .timeline-bkt {
         left: -47px;
     }
-
     .sch, .sport-timeline .section-title {
         left: 0;
         padding: 0 15px;
@@ -535,17 +534,14 @@ header .navbar {
     .career-growth {
         padding: 0 15px;
     }
-
     .skills-card {
         width: 100%;
         max-width: 100%;
     }
-
     .doelen-sectie {
         margin-top: 80px;
         margin-bottom: 50px;
     }
-
     .doel2 {
         padding: 20px;
     }
