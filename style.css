@@ -471,23 +471,25 @@ header .navbar {
 @media (max-width: 768px) {
     header .navbar {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 10px;
         padding: 12px 15px;
         align-items: center;
-        flex-wrap: wrap; 
     }
     .navbar .nav-logo .logo-text {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .navbar .nav-menu {
         display: flex;
-        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 15px;
+        width: 100%;
     }
-
     .navbar .nav-menu .nav-link {
-        font-size: 0.85rem;
+        font-size: 0.85rem;         
         padding: 4px 0;
+        display: inline-block;
     }
     .inleiding .inleiding-content {
         flex-direction: column-reverse;
