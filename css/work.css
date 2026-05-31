@@ -1,0 +1,203 @@
+.work-page {
+    padding-bottom: 80px;
+}
+
+.work-section {
+    max-width: 1100px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.work-section:last-child {
+    margin-bottom: 40px;
+}
+
+.career-badge {
+    display: inline-block;
+    background: var(--accent-gold);
+    color: var(--button-text);
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.career-role {
+    color: var(--accent-gold);
+    font-weight: 500;
+    font-size: var(--font-size-s);
+    margin-bottom: 12px;
+}
+
+.career-role .date {
+    display: block;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.career-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    color: var(--white-color);
+}
+
+.career-card p:last-child,
+.career-list {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: var(--font-size-s);
+}
+
+.career-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.career-list strong {
+    color: var(--accent-gold);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.achievements-grid--featured {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background: var(--surface-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 28px;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent-gold);
+    opacity: 0.5;
+}
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.12);
+}
+
+.achievement-card--gold::before {
+    opacity: 1;
+    height: 4px;
+    box-shadow: 0 0 16px rgba(212, 175, 55, 0.6);
+}
+
+.achievement-card--silver::before {
+    background: linear-gradient(90deg, #c0c0c0, var(--accent-gold));
+    opacity: 1;
+}
+
+.achievement-card--bronze::before {
+    background: linear-gradient(90deg, #cd7f32, var(--accent-gold));
+    opacity: 1;
+}
+
+.achievement-card--featured {
+    padding: 36px;
+    border-left: 4px solid var(--accent-gold);
+}
+
+.achievement-card--featured::before {
+    height: 4px;
+    opacity: 1;
+}
+
+.achievement-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-gold);
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.achievement-tag--academic {
+    color: #7eb8ff;
+    background: rgba(126, 184, 255, 0.1);
+    border-color: rgba(126, 184, 255, 0.25);
+}
+
+.achievement-year {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.achievement-card h3 {
+    font-size: 1.15rem;
+    color: var(--white-color);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.achievement-card p {
+    color: var(--text-muted);
+    font-size: var(--font-size-s);
+    line-height: 1.7;
+}
+
+.achievement-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #1877f2;
+    color: #ffffff !important;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.achievement-link:hover {
+    background: #166fe5;
+    box-shadow: 0 4px 14px rgba(24, 119, 242, 0.35);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-card--featured {
+        padding: 24px;
+    }
+
+    .work-section {
+        margin-bottom: 60px;
+    }
+}
